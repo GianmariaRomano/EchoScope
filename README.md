@@ -53,7 +53,7 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ---
 
-## 🧠 Models & Techniques
+## 🧠 Models & Techniques (To Update)
 
 - **Clustering:** PCA, K-Means
 - **Prediction:** TBA
@@ -62,13 +62,13 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ---
 
-## 📈 Results
+## 📈 Results (Coming Soon)
 
 - TBA
 
 ---
 
-## 🛠 Structure (to fix)
+## 🛠 Structure (To Update)
 
 ├── data/
 │   ├── dataset.csv
@@ -81,6 +81,7 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 │   ├── preprocessing.py
 ├── LICENSE
 └── README.md
+
 
 ---
 
