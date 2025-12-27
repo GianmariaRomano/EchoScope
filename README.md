@@ -72,6 +72,8 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ## 🛠 Structure (To Update)
 
+```html
+<pre>
 |-- data/
 |   |-- dataset.csv
 |   `-- dataset_clean.csv
@@ -83,6 +85,8 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 |   `-- preprocessing.py
 |-- LICENSE
 `-- README.md
+</pre>
+```
 
 ---
 
