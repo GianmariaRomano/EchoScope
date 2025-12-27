@@ -72,17 +72,11 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ## 🛠 Structure (To Update)
 
-├├── data/
-│   ├── dataset.csv
-│   └── dataset_clean.csv
-├── notebooks/
-│   ├── data_visualization.ipynb
-│   ├── data_preprocessing.ipynb
-│   └── clustering.ipynb
-├── src/
-│   ├── preprocessing.py
-├── LICENSE
-└── README.md
+|-- data/
+| |-- dataset.csv
+| -- dataset_clean.csv |-- notebooks/ | |-- data_visualization.ipynb | |-- data_preprocessing.ipynb | -- clustering.ipynb
+|-- src/
+| -- preprocessing.py |-- LICENSE -- README.md
 
 ---
 
