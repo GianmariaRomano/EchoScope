@@ -14,7 +14,9 @@ This project is based on the *Spotify Tracks Dataset* from Kaggle.
 ## 📊 Dataset
 
 **Source:** *Spotify Tracks Dataset* from Kaggle
+
 **Size:** ~114k tracks  
+
 **Features include:**
 - Acousticness
 - Danceability
@@ -70,7 +72,7 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ## 🛠 Structure (To Update)
 
-├── data/
+├├── data/
 │   ├── dataset.csv
 │   └── dataset_clean.csv
 ├── notebooks/
