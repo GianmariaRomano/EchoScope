@@ -83,7 +83,8 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 |   |-- data_preprocessing.ipynb
 |   `-- clustering.ipynb
 |-- src/
-|   `-- preprocessing.py
+|   |-- preprocessing.py
+|   `-- clustering.py
 |-- LICENSE
 `-- README.md
 </pre>
