@@ -66,6 +66,7 @@ The dataset provides Spotify’s audio analysis features, making it suitable for
 
 ## 📈 Results (Coming Soon)
 
+- Setting a random seed equal to 26 using n_components = 2 and K = 5 gives groups that seem to overlap: for future analysis, the model could benefit from working with more components during the PCA steps and/or from using more clusters.
 - TBA
 
 ---
