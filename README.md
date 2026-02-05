@@ -132,7 +132,7 @@ Use this to find track metadata and confirm the exact name of a song in the data
 ```
 
 ### 🎵 2. Recommendation Endpoint (`/recommend`)
-The core engine. It identifies the track's cluster and generates a hybrid list of recommendations based on audio similarity and popularity potential.
+The core engine, which is tasked with identifying the track's cluster and generating a list of recommendations based on audio similarity and popularity potential.
 
 | Parameter | Type | Example Value | Description |
 | :--- | :--- | :--- | :--- |
