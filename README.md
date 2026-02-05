@@ -95,41 +95,22 @@ pip install -r requirements.txt
 The EchoScope project includes a production-ready REST API built with **FastAPI** that allows to search for tracks and get real-time song recommendations.
 
 To use the API:
-1) Ensure you have installed all dependencies:
+1. Ensure you have installed all dependencies:
+    ```bash
+    pip install -r requirements.txt
+    pip install uvicorn
+    ```
 
-```bash
-pip install -r requirements.txt
-pip install uvicorn
-```
-2) Run the following command in your terminal:
-
-```bash
-uvicorn main:app --reload
-```
-
-**N.B.:** The command must be run in the same directory of the `main.py` file.
-
-3) Once the server is running, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
-
-   Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
-   - Example using the `/search` endpoint.
-     
-     **Input:** `'title=Primadonna'`.
-     **Output:**
-     
-     ```json
-     {
-      "track_name": "Primadonna",
-      "artists": "MARINA",
-      "album_name": "Electra Heart (Deluxe)",
-      "popularity_pred": 43.31602239712377
-    }
+2. Run the following command in your terminal:
+    ```bash
+    uvicorn main:app --reload
     ```
     
-   - Example using the `/get` endpoint.
-     
-     **Input:**
-     **Output:**
+    **N.B.:** The command must be run in the same directory as the `main.py` file.
+
+3. Once the server is running, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
+
+   Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
 
 ### 🍪 Examples
 - Using the `/search` endpoint.
