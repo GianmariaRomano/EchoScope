@@ -1,4 +1,4 @@
-# 🎶 EchoScope – Spotify Track Analysis & Recommendation System
+# 🎶 EchoScope: Spotify Track Analysis & Recommendation System
 
 Music streaming platforms rely heavily on data-driven systems to understand user preferences and song characteristics.
 
