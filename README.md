@@ -108,9 +108,28 @@ uvicorn main:app --reload
 ```
 
 **N.B.:** The command must be run in the same directory of the `main.py` file.
+
 3) Once the server is running, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
-Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
+   Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
+   - Example using the `/search` endpoint.
+     
+     **Input:** `'title=Primadonna'`.
+     **Output:**
+     
+     ```json
+     {
+      "track_name": "Primadonna",
+      "artists": "MARINA",
+      "album_name": "Electra Heart (Deluxe)",
+      "popularity_pred": 43.31602239712377
+    }
+    ```
+    
+   - Example using the `/get` endpoint.
+     
+     **Input:**
+     **Output:**
 
 ### 🍪 Examples
 - Using the `/search` endpoint.
