@@ -86,7 +86,7 @@ cd echoscope
 ```bash
 pip install -r requirements.txt
 ```
-3) Run the pipeline.
+3) Run the pipeline, eventually fixing the arguments passed in the `pd.read_csv()` and the `df.to_csv()` functions for directory consistency.
 
 ---
 
