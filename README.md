@@ -101,12 +101,10 @@ To use the API:
     pip install uvicorn
     ```
 
-2. Run the following command in your terminal:
+2. Run the following command in your terminal, in the same directory as the `main.py` file:
     ```bash
     uvicorn main:app --reload
     ```
-    
-    **N.B.:** The command must be run in the same directory as the `main.py` file.
 
 3. Once the server is running, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
