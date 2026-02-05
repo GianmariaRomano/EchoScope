@@ -110,69 +110,71 @@ To use the API:
 
    Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
 
+---
+
 ## 🍪 API Usage Examples
 
 - Using the `/search` endpoint.
+  
+  Input: `'title=Primadonna'`
 
-Input: `'title=Primadonna'`
+  Output:
 
-Output:
-
-```json
-{
-  "track_name": "Primadonna",
-  "artists": "MARINA",
-  "album_name": "Electra Heart (Deluxe)",
-  "popularity_pred": 43.31602239712377
-}
-```
+  ```json
+  {
+      "track_name": "Primadonna",
+      "artists": "MARINA",
+      "album_name": "Electra Heart (Deluxe)",
+      "popularity_pred": 43.31602239712377
+  }
+  ```
 
 - Using the `/get` endpoint.
 
-Input: `'title=Flamingo, artist=Kenshi Yonezu, n=5'`
+  Input: `'title=Flamingo, artist=Kenshi Yonezu, n=5'`
 
-Output:
+  Output:
 
-```json
-{
-  "base_song": {
-    "title": "Flamingo",
-    "artist": "Kenshi Yonezu",
-    "cluster": 3
-  },
+  ```json
+  {
+      "base_song": {
+        "title": "Flamingo",
+        "artist": "Kenshi Yonezu",
+        "cluster": 3
+      },
   "recommendations": [
-    {
-      "track_name": "Potion (with Dua Lipa & Young Thug)",
-      "artists": "Calvin Harris;Dua Lipa;Young Thug",
-      "similarity": 0.9941308550210434,
-      "popularity_pred": 65.53664973217978
-    },
-    {
-      "track_name": "Super Freaky Girl",
-      "artists": "Nicki Minaj",
-      "similarity": 0.9819700328972946,
-      "popularity_pred": 65.62990915982563
-    },
-    {
-      "track_name": "Junio",
-      "artists": "Maluma",
-      "similarity": 0.997504295224316,
-      "popularity_pred": 61.24409399922533
-    },
-    {
-      "track_name": "Mañana",
-      "artists": "Ozuna",
-      "similarity": 0.9844486362553109,
-      "popularity_pred": 63.98581589032971
-    },
-    {
-      "track_name": "One Kiss (with Dua Lipa)",
-      "artists": "Calvin Harris;Dua Lipa",
-      "similarity": 0.9699285362683252,
-      "popularity_pred": 66.99163000775533
+        {
+          "track_name": "Potion (with Dua Lipa & Young Thug)",
+          "artists": "Calvin Harris;Dua Lipa;Young Thug",
+          "similarity": 0.9941308550210434,
+          "popularity_pred": 65.53664973217978
+        },
+        {
+          "track_name": "Super Freaky Girl",
+          "artists": "Nicki Minaj",
+          "similarity": 0.9819700328972946,
+          "popularity_pred": 65.62990915982563
+        },
+        {
+          "track_name": "Junio",
+          "artists": "Maluma",
+          "similarity": 0.997504295224316,
+          "popularity_pred": 61.24409399922533
+        },
+        {
+          "track_name": "Mañana",
+          "artists": "Ozuna",
+          "similarity": 0.9844486362553109,
+          "popularity_pred": 63.98581589032971
+        },
+        {
+          "track_name": "One Kiss (with Dua Lipa)",
+          "artists": "Calvin Harris;Dua Lipa",
+          "similarity": 0.9699285362683252,
+          "popularity_pred": 66.99163000775533
+        }
+      ]
     }
-  ]
-}
-```
+    ```
 
 ---
