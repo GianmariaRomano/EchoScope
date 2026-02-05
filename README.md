@@ -24,7 +24,7 @@ The project is structured as a modular pipeline as each notebook focuses on a sp
 
 **Source:** [Kaggle – Spotify Tracks Dataset]([link](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)) by Maharshi Pandya.
 
-**Size:** ~114,000 tracks
+**Size:** ~114,000 tracks.
 
 **Key Features:** `danceability`, `energy`, `loudness`, `speechiness`, `acousticness`, `instrumentalness`, `liveness`, `valence`, `tempo`.
 
@@ -108,7 +108,7 @@ To use the API:
 
 3. Once the server is running, visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
-   Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
+   Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` endpoint to find similar songs to an input-provided song title.
 
 ---
 
