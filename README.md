@@ -1,4 +1,4 @@
-# 🎵 EchoScope – Spotify Track Analysis & Recommendation System
+# 🎶 EchoScope – Spotify Track Analysis & Recommendation System
 
 Music streaming platforms rely heavily on data-driven systems to understand user preferences and song characteristics.
 
@@ -114,67 +114,73 @@ To use the API:
 
 ## 🍪 API Usage Examples
 
-- Using the `/search` endpoint.
-  
-  Input: `'title=Primadonna'`
+### 🔍 1. Search Endpoint (`/search`)
+Use this to find track metadata and confirm the exact name of a song in the database.
 
-  Output:
+| Parameter | Type | Example Value | Description |
+| :--- | :--- | :--- | :--- |
+| **title** | `string` | `Primadonna` | The name of the track to search for |
 
-  ```json
-  {
-      "track_name": "Primadonna",
-      "artists": "MARINA",
-      "album_name": "Electra Heart (Deluxe)",
-      "popularity_pred": 43.31602239712377
-  }
-  ```
+**Example Response:**
+```json
+{
+  "track_name": "Primadonna",
+  "artists": "MARINA",
+  "album_name": "Electra Heart (Deluxe)",
+  "popularity_pred": 43.32
+}
+```
 
-- Using the `/get` endpoint.
+### 🎵 2. Recommendation Endpoint (`/recommend`)
+The core engine. It identifies the track's cluster and generates a hybrid list of recommendations based on audio similarity and popularity potential.
 
-  Input: `'title=Flamingo, artist=Kenshi Yonezu, n=5'`
+| Parameter | Type | Example Value | Description |
+| :--- | :--- | :--- | :--- |
+| **track_name** | `string` | `Flamingo` | Target song for similarity analysis |
+| **artist_name**| `string` | `Kenshi Yonezu` | (Optional) To filter specific artists |
+| **n** | `int` | `5` | Number of recommendations to return |
 
-  Output:
-
-  ```json
-  {
-      "base_song": {
-        "title": "Flamingo",
-        "artist": "Kenshi Yonezu",
-        "cluster": 3
-      },
+**Example Response:**
+```json
+{
+  "base_song": {
+    "title": "Flamingo",
+    "artist": "Kenshi Yonezu",
+    "cluster": 3
+  },
   "recommendations": [
-        {
-          "track_name": "Potion (with Dua Lipa & Young Thug)",
-          "artists": "Calvin Harris;Dua Lipa;Young Thug",
-          "similarity": 0.9941308550210434,
-          "popularity_pred": 65.53664973217978
-        },
-        {
-          "track_name": "Super Freaky Girl",
-          "artists": "Nicki Minaj",
-          "similarity": 0.9819700328972946,
-          "popularity_pred": 65.62990915982563
-        },
-        {
-          "track_name": "Junio",
-          "artists": "Maluma",
-          "similarity": 0.997504295224316,
-          "popularity_pred": 61.24409399922533
-        },
-        {
-          "track_name": "Mañana",
-          "artists": "Ozuna",
-          "similarity": 0.9844486362553109,
-          "popularity_pred": 63.98581589032971
-        },
-        {
-          "track_name": "One Kiss (with Dua Lipa)",
-          "artists": "Calvin Harris;Dua Lipa",
-          "similarity": 0.9699285362683252,
-          "popularity_pred": 66.99163000775533
-        }
-      ]
+    {
+      "track_name": "Potion (with Dua Lipa & Young Thug)",
+      "artists": "Calvin Harris;Dua Lipa;Young Thug",
+      "similarity": 0.99,
+      "popularity_pred": 65.54
+    },
+    {
+      "track_name": "Super Freaky Girl",
+      "artists": "Nicki Minaj",
+      "similarity": 0.98,
+      "popularity_pred": 65.63
+    },
+    {
+      "track_name": "Junio",
+      "artists": "Maluma",
+      "similarity": 0.99,
+      "popularity_pred": 61.24
+    },
+    {
+      "track_name": "Mañana",
+      "artists": "Ozuna",
+      "similarity": 0.98,
+      "popularity_pred": 63.98
+    },
+    {
+      "track_name": "One Kiss (with Dua Lipa)",
+      "artists": "Calvin Harris;Dua Lipa",
+      "similarity": 0.97,
+      "popularity_pred": 66.99
     }
-    ```
+  ]
+}
+```
 
 ---
