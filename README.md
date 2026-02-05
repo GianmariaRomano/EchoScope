@@ -110,7 +110,8 @@ To use the API:
 
    Here, you will be able to use the `/search` endpoint to search for songs in the database and the `/recommend` enpoint to find similar songs to an input-provided song title.
 
-### 🍪 Examples
+## 🍪 API Usage Examples
+
 - Using the `/search` endpoint.
 
 Input: `'title=Primadonna'`
